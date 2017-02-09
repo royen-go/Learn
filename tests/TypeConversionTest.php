@@ -4,7 +4,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 /**
  * Class TypeConversionTest
- *   
+ *
  *
  */
 final class TypeConversionTest extends PHPUnit\Framework\TestCase {
