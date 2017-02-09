@@ -1,13 +1,12 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
 
 /**
  * Class TypeConversionTest
  *
  *
  */
-final class TypeConversionTest extends PHPUnit\Framework\TestCase {
+final class TypeConversionTest extends \PHPUnit\Framework\TestCase {
 
     public function testStringTypeConversion()
     {
