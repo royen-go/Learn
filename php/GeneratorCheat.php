@@ -13,7 +13,6 @@ function dragonStrike($n)
         $n--;
         $yieldExpressionResult = yield $n;
 
-//            var_dump($yieldExpressionResult);
         if ($yieldExpressionResult) {
             echo '击打一点生命值，当前对方还剩生命值::', $n ,PHP_EOL, $yieldExpressionResult, PHP_EOL;
         }
