@@ -31,4 +31,25 @@ final class TypeConversionTest extends PHPUnit\Framework\TestCase {
 
     }
 
+    public function testStringTypeConversionD()
+    {
+        $a = '1top' == 1;
+        $this->assertTrue($a);
+
+        $a = 'top' == 0;
+        $this->assertTrue($a);
+
+        $a = 123 == '123';
+        $this->assertTrue($a);
+
+//        var_dump('Testing ' . 1 + 2 . '45');
+
+//        $a = 'top' === 0;
+//        $this->assertTrue($a);
+
+//        $a = 'a' == a;
+//        $this->assertTrue($a);
+
+    }
+
 }
