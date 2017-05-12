@@ -1,10 +1,13 @@
 <?php
 
+namespace Tests;
+use PHPUnit\Framework\TestCase;
+
 /**
  * Date: 2017/5/2
  * Time: 09:42
  */
-class SeparateClass extends PHPUnit\Framework\TestCase
+class SeparateClass extends TestCase
 {
     public function testA()
     {

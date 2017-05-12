@@ -1,10 +1,13 @@
 <?php
 
+namespace Tests;
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class TypeConversionTest
  *
  */
-final class TypeConversionTest extends PHPUnit\Framework\TestCase {
+final class TypeConversionTest extends TestCase {
 
     public function testStringTypeConversion()
     {

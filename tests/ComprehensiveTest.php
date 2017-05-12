@@ -1,11 +1,14 @@
 <?php
 
+namespace Tests;
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class ComprehensiveTest
  *
  *
  */
-class ComprehensiveTest extends PHPUnit\Framework\TestCase {
+class ComprehensiveTest extends TestCase {
 
     public function testEmpty()
     {

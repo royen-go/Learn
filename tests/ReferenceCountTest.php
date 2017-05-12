@@ -1,12 +1,16 @@
 <?php
 
+namespace Tests;
+use PHPUnit\Framework\TestCase;
+
 /**
  * User: renshuai <renshuai@namedfish.com>
  * Date: 2017/2/11
  * Time: 11:43
  * IDE: PhpStorm
  */
-class ReferenceCountTest extends \PHPUnit\Framework\TestCase{
+class ReferenceCountTest extends TestCase
+{
 
     public function testBasic()
     {

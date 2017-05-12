@@ -1,12 +1,15 @@
 <?php
 
+namespace Tests;
+use PHPUnit\Framework\TestCase;
+
 /**
  * Date: 2017/4/15
  * Time: 19:02
  *
  * @link http://php.net/manual/zh/intro.sem.php
  */
-class SemaphoreTest extends PHPUnit\Framework\TestCase
+class SemaphoreTest extends TestCase
 {
     /**
      *
