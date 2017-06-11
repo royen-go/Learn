@@ -2,6 +2,7 @@
 
 
 
+
 function dragonStrike($n)
 {
     if ($n <= 0) {
@@ -11,7 +12,7 @@ function dragonStrike($n)
     while(true) {
 
         $n--;
-        $yieldExpressionResult = yield $n;
+        $yieldExpressionResult = (yield $n);
 
         if ($yieldExpressionResult) {
             echo '击打一点生命值，当前对方还剩生命值::', $n ,PHP_EOL, $yieldExpressionResult, PHP_EOL;
@@ -19,12 +20,9 @@ function dragonStrike($n)
     }
 }
 
-
-$n = 1000;
-
+$n = 10;
 $ds = dragonStrike($n);
 
-//var_dump($ds);
 echo '神功准备[rewind()]' , PHP_EOL;
 $ds->rewind();
 
@@ -49,4 +47,3 @@ $endTime = microtime(true);
 
 echo "击溃对方勇士", bcsub($endTime, $startTime, 4), 's', PHP_EOL;
 
-//echo "times is ", $generatorCheat->times, PHP_EOL;
