@@ -47,4 +47,6 @@ final class TypeConversionTest extends TestCase {
         $this->assertEquals(245, $a);
     }
 
+    
+
 }

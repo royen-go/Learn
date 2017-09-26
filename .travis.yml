@@ -3,8 +3,12 @@ php:
   - 5.6
   - 5.5
   - 5.4
-  - hhvm
 before_script:
-  - composer install
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
 
-script: phpunit tests/TypeConversionTest.php
+
+script: ./vendor/bin/phpunit
+
+matrix:
+  fast_finish: true
