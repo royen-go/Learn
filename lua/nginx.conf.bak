@@ -38,7 +38,7 @@ http {
                     ngx.log(ngx.ERR, "redis server returned bad status: ",
                         res.status)
                     ngx.exit(res.status)
-                end
+                ent
 
                 if not res.body then
                     ngx.log(ngx.ERR, "redis returned empty body")
