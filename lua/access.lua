@@ -6,7 +6,7 @@ local BUSINESS = ngx.var.business --nginx的location中定义的业务标识符
 --连接redis
 local redis = require "resty.redis"
 local conn = redis:new()
-ok, err = conn:connect("localhost", 6379)
+ok, err = conn:connect("127.0.0.1", 6379)
 conn:set_timeout(2000) --超时时间2秒
 
 --如果连接失败，跳转到脚本结尾
