@@ -20,7 +20,7 @@ function dragonStrike($n)
     }
 }
 
-$n = 10;
+$n = 20;
 $ds = dragonStrike($n);
 
 echo '神功准备[rewind()]' , PHP_EOL;
