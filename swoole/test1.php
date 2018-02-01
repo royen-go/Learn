@@ -24,4 +24,4 @@ $client->on("close", function($cli){
     echo "Connection close\n";
 });
 //发起网络连接
-$client->connect('localhost', 80, 1);
+$client->connect('', 80, 1);
