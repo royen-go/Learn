@@ -1,7 +1,5 @@
 <?php
-
-
-
+//生成器
 
 function dragonStrike($n)
 {
