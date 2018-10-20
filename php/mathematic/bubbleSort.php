@@ -11,6 +11,10 @@ $demo_array = array(23, 15, 43, 25, 54, 2);
 function bubbleSort(array $arr)
 {
     $count = count($arr);
+    if ($count < 2){
+        return $arr;
+    }
+
     // 第一层for循环可以理解为从数组中键为0开始循环到最后一个
     for ($i = 0; $i < $count; $i++) {
         // 比较数组中相邻两个值的大小

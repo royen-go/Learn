@@ -1,19 +1,25 @@
 <?php
 //
 
-$demo_array = array(23,15,43,25,54,2,6,82,11,5,21,32,65);
+$demo_array = array(23, 15, 43, 25, 54, 2, 6, 82, 11, 5, 21, 32, 65);
 
 //选择排序法
 //实现思路 双重循环完成，外层控制轮数，当前的最小值。内层 控制的比较次数
-function select_sort($arr) {
+function select_sort($arr)
+{
     //$i 当前最小值的位置， 需要参与比较的元素
-    for($i=0, $len=count($arr); $i<$len-1; $i++) {
+    $len = count($arr);
+    if ($len < 2) {
+        return $arr;
+    }
+
+    for ($i = 0; $i < $len - 1; $i++) {
         //先假设最小的值的位置
         $p = $i;
         //$j 当前都需要和哪些元素比较，$i 后边的。
-        for($j=$i+1; $j<$len; $j++) {
+        for ($j = $i + 1; $j < $len; $j++) {
             //$arr[$p] 是 当前已知的最小值
-            if($arr[$p] > $arr[$j]) {
+            if ($arr[$p] > $arr[$j]) {
                 //比较，发现更小的,记录下最小值的位置；并且在下次比较时，应该采用已知的最小值进行比较。
                 $p = $j;
             }
@@ -24,6 +30,7 @@ function select_sort($arr) {
         $arr[$p] = $arr[$i];
         $arr[$i] = $tmp;
     }
+
 //返回最终结果
     return $arr;
 }
