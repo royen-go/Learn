@@ -43,7 +43,7 @@ class ArrayStack
     }
 }
 
-$stack = new ArrayStack(2);
+$stack = new ArrayStack(3);
 $stack->push(10);
 $stack->push(1);
 $stack->push(4);

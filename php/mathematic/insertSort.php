@@ -16,9 +16,8 @@ function insertSort($arr)
     for ($i = 1; $i < $length; $i++) {
 
         $value = $arr[$i];
-        $j = $i - 1;
 
-        for (; $j >= 0; $j--) {
+        for ($j = $i - 1; $j >= 0; $j--) {
             if ($arr[$j] > $value) {
                 $arr[$j + 1] = $arr[$j];
             } else {
@@ -26,11 +25,16 @@ function insertSort($arr)
             }
         }
 
-        $arr[$j] = $value;
+        $arr[$j + 1] = $value;
     }
 
     return $arr;
 }
+
+//$i = 1    2,5,8,4,6,3,7
+//$i = 2    2,5,8,4,6,3,7
+//$i = 3    2,4,5,8,6,3,7
+
 
 var_dump(insertSort($demo_array));
 

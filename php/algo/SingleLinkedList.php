@@ -106,14 +106,12 @@ class SingleLinkedList
     }
 }
 
-$sll = new SingleLinkedList();
-
-$sll->insert(1);
-$sll->insert(2);
-$sll->insert(9);
-
-$node = $sll->getNodeByIndex(2);
-$sll->delete($node);
-
-var_dump($sll->getLength());
+//$sll = new SingleLinkedList();
+//$sll->insert(1);
+//$sll->insert(2);
+//$sll->insert(9);
+//$node = $sll->getNodeByIndex(2);
+//$sll->delete($node);
+//
+//var_dump($sll->getLength());
 

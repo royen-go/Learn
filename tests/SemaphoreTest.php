@@ -18,7 +18,7 @@ class SemaphoreTest extends TestCase
     public function testA()
     {
         $count = $this->get(5);
-        echo 'from testA count is ' . $count;
+        echo 'from testA length is ' . $count;
         $this->assertTrue($count > 0);
     }
 
@@ -29,7 +29,7 @@ class SemaphoreTest extends TestCase
     public function testB()
     {
         $count = $this->get(3);
-        echo 'from testB count is ' . $count;
+        echo 'from testB length is ' . $count;
         $this->assertTrue($count > 0);
     }
 
